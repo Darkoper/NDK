@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Gilroy";
+  src: url("../src/assets/Fonts/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../src/assets/Fonts/Gilroy-ExtraBold.otf");
+}
+
+body{
+  font-family: "gilroy";
+}
+
+.Bold{
+  font-family: "Gilroy-Bold";
+}
+
