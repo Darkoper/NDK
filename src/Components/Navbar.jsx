@@ -83,7 +83,7 @@ function Navbar() {
                         }`
                       }
                     >
-                      Home Keeping Essentials
+                      House Keeping Essentials
                       
                       
                     </NavLink>
@@ -123,8 +123,8 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/contact"
+            <a
+              href="tel:+919876543210"
               className={({ isActive }) =>
                 `relative text-black flex flex-col justify-center items-center hover:text-emerald-700 transition-all duration-300 ease-in-out
                 after:content-[""] after:absolute after:left-0 after:bottom-0 
@@ -134,9 +134,9 @@ function Navbar() {
                 ${isActive ? "text-emerald-700 font-semibold after:w-full" : ""}`
               }
             >
-              <span>Call now</span>
+              <span>📞 Call now  </span>
               <span>+91 95602 27664</span>
-            </NavLink>
+            </a>
           </li>
         </ul>
 
@@ -273,8 +273,8 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/contact"
+            <a
+              href="tel:+919560227664"
               onClick={closeMobileMenu}
               className={({ isActive }) =>
                 `block text-black hover:text-emerald-700 ${
@@ -282,9 +282,9 @@ function Navbar() {
                 }`
               }
             >
-              <span>Call now</span>
-              <span>+91 95602 27664</span>
-            </NavLink>
+                <span>Call now</span><br />
+                <span>+91 95602 27664</span> 
+            </a>
           </li>
         </ul>
       </div>
