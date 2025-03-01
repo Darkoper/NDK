@@ -236,7 +236,7 @@ function Navbar() {
                       }`
                     }
                   >
-                    Home Keeping Essentials
+                    House Keeping Essentials
                   </NavLink>
                 </li>
                 <hr />
@@ -282,8 +282,8 @@ function Navbar() {
                 }`
               }
             >
-                <span>Call now</span><br />
-                <span>+91 95602 27664</span> 
+                <span> 📞 Call now</span><br />
+                <span> +91 95602 27664</span> 
             </a>
           </li>
         </ul>
