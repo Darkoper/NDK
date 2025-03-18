@@ -2,7 +2,8 @@ import React from 'react'
 const Homekeeping = () => {
   return (
     <div>
-      HomeKeeping Essentinals
+      <h1>Hangers</h1>   
+    
     </div>
   )
 }
