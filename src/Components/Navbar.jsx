@@ -273,7 +273,7 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <a
+            <a 
               href="tel:+919560227664"
               onClick={closeMobileMenu}
               className={({ isActive }) =>

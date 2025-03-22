@@ -130,7 +130,11 @@ const Home = () => {
         cards={cards} 
         
         />
-      </section>    
+      </section>
+
+      <address className='w-full overflow-hidden h-0 pb-[30%] relative' >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.639597380419!2d77.2127426752035!3d28.657428682950208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd7216e92e03%3A0x498aa9d178363e5b!2sNarain%20Dass%20Khanna%20%26%20Co.!5e1!3m2!1sen!2sin!4v1742676248823!5m2!1sen!2sin" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='b-0 h-full w-full absolute left-0 top-0'></iframe>
+      </address>    
     </div>
     
   );

@@ -9,6 +9,7 @@ const Card = ({ image, heading, para, btn, path }) => {
         className="w-full h-48 object-cover"
         src={image}
         alt={heading}
+        loading="lazy"
       />
 
       {/* Content Section */}
