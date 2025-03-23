@@ -75,7 +75,7 @@ const Home = () => {
           <p className="mt-4 text-base md:text-lg lg:text-xl max-w-2xl">
             Elevate your living space with our curated collection of premium household essentials
           </p>
-          <NavLink to="/products/home-keeping">
+          <NavLink to="/products/Wholesalers-store">
             <button
               className="mt-8 px-6 py-2 bg-black hover:bg-blue-700 rounded-lg text-sm md:text-base"
             >
