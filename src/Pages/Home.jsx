@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import main from '../assets/main.png'; // Import the image
 import { motion } from "framer-motion"; // Corrected import for motion
 import { NavLink } from 'react-router-dom';

@@ -15,7 +15,7 @@ const About = () => {
           style={{ backgroundImage: `url(${about})` }}
         >
           {/* Overlay */}
-          <div className="absolute inset-0 bg-white bg-opacity-40"></div>
+          <div className="absolute inset-0 bg-white bg-opacity-60"></div>
         </div>
 
         {/* Content */}
@@ -23,7 +23,7 @@ const About = () => {
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, ease: "easeInOut" }}
-          className="relative z-10 text-white text-center flex flex-col justify-center items-center h-full px-4"
+          className="relative z-10 text-green-600 text-center flex flex-col justify-center items-center h-full px-4"
         >
           <h1 className="Bold text-4xl md:text-5xl lg:text-6xl">
             Discover Quality Household Products
@@ -33,7 +33,7 @@ const About = () => {
           </p>
           <NavLink to="/products/home-keeping">
             <button 
-              className="mt-8 px-6 py-2 bg-black hover:bg-blue-700 rounded-lg text-sm md:text-base"
+              className="mt-8 px-6 py-2 bg-white  hover:bg-blue-700 rounded-lg text-sm md:text-base"
             >
               Explore Collections
             </button>
