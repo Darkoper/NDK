@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const CatSec = ({ heading, para, cards }) => {
   return (
-    <div className="p-6 md:p-12 lg:p-20 bg-gray-50">
+    <div className="p-6 md:p-12 lg:p-20 ">
       {/* Heading and Paragraph Section */}
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">{heading}</h2>

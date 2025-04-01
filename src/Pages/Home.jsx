@@ -124,7 +124,7 @@ const Home = () => {
         
         />
       </section>    
-      <section className='bg-emerald-800'>
+      <section >
         <Catsec heading="Featured Products"
         para="Explore our featured categories and discover the best products and services tailored to your needs."
         cards={cards} 

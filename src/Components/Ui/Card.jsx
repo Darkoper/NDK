@@ -15,7 +15,7 @@ const Card = ({ image, heading, para, btn, path }) => {
       {/* Content Section */}
       <div className="px-6 py-4">
         {/* Heading */}
-        <h2 className="text-xl font-semibold text-gray-800 mb-2">{heading}</h2>
+        <h2 className="text-xl semibold text-gray-800 mb-2">{heading}</h2>
 
         {/* Paragraph */}
         <p className="text-gray-600 text-base">{para}</p>
