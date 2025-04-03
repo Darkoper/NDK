@@ -9,7 +9,10 @@ import Footer from "./Components/Footer.jsx";
 import Hangers from "./Pages/WholesalersStore/products/Hangers.jsx";
 import Wipers from "./Pages/WholesalersStore/products/Wipers.jsx"
 import SprayBottles from "./Pages/WholesalersStore/products/SprayBottles.jsx";
-
+import Mops from "./Pages/WholesalersStore/products/Mop.jsx"
+import ToiletBrushes from "./Pages/WholesalersStore/products/ToiletBrush.jsx";
+import Ropes from "./Pages/WholesalersStore/products/Ropes.jsx";
+import CleaningBrushes from "./Pages/WholesalersStore/products/CleaningBrush.jsx";
 export default function App() {
   return (
     <Router>
@@ -23,6 +26,10 @@ export default function App() {
         <Route path = "/products/Wholesalers-store/Hangers" element={<Hangers/>}/>
         <Route path = "/products/Wholesalers-store/Wipers" element={<Wipers/>}/>
         <Route path = "/products/Wholesalers-store/SprayBottles" element={<SprayBottles/>}/>
+        <Route path = "/products/Wholesalers-store/Mops" element={<Mops/>}/>
+        <Route path = "/products/Wholesalers-store/ToiletBrushes" element={<ToiletBrushes/>}/>
+        <Route path = "/products/Wholesalers-store/Ropes" element={<Ropes/>}/>
+        <Route path = "/products/Wholesalers-store/CleaningBrushes" element={<CleaningBrushes/>}/>
         
       </Routes>
       <Footer />
