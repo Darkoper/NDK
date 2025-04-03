@@ -7,10 +7,11 @@ import Catsec from '../Components/Ui/Catsec'
 const Home = () => {
   const cards= [
     {
-      image:"https://imgur.com/pZTtbq4.png",
+      image:"https://imgur.com/eEubmUX.png",
       heading:"Hanger",
       btn: "View More",
-    
+      path: "/products/Wholesalers-store",
+      
     },
     {
       image:"https://imgur.com/XagbAfO.png",

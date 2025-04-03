@@ -17,6 +17,7 @@ const Category = ({ title, data }) => {
             para={card.para}
             btn={card.btn}
             path={card.path}
+            showArrow = {card.showArrow}
           />
         ))}
       </div>

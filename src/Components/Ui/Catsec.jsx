@@ -16,6 +16,7 @@ const CatSec = ({ heading, para, cards }) => {
           <Card
             key={index}
             image={card.image}
+            alt = {card.heading}
             heading={card.heading}
             para={card.para}
             btn={card.btn}

@@ -1,7 +1,6 @@
 import React from 'react'
-import Category from '../../Components/Ui/Category';
-import { hangers } from '../../Data/hangers';
-
+import Category from '../../../Components/Ui/Category';
+import { hangers } from '../../../Data/hangers';
 const Hangers = () => {
   return (
     <div>
