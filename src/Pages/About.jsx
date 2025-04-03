@@ -30,34 +30,34 @@ const About = () => {
   return (
     <div className='h-full w-full'>
       {/* Hero Section */}
-      <section className="h-screen w-full relative overflow-hidden flex">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center -z-50"
-          style={{ backgroundImage: `url(https://images.unsplash.com/photo-1605371924599-2d0365da1ae0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)` }}
-        />
-        
-        {/* Left Side with Overlay and Text */}
-        <div className="w-1/2 h-full relative bg-white bg-opacity-60 flex items-center justify-center p-8">
-          <motion.div
-            initial={{ y: 25, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2, ease: "easeInOut" }}
-            className="text-black max-w-md"
-          >
-            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl mb-4 font-roboto">
-              50 Years of Excellence in<br />
-              Wholesale Distribution
-            </h1>
-            <p className="text-lg md:text-xl mb-8">
-              Family-owned business serving quality cleaning supplies and household essentials since 1973
-            </p>
-          </motion.div>
-        </div>
+      <section className="h-screen w-full relative overflow-hidden flex flex-col md:flex-row">
+  {/* Background Image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center -z-50"
+    style={{ backgroundImage: `url(https://images.unsplash.com/photo-1605371924599-2d0365da1ae0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)` }}
+  />
+  
+  {/* Left Side - Full width on mobile, half on desktop */}
+  <div className="w-full md:w-1/2 h-1/2 md:h-full relative bg-white bg-opacity-60 flex items-center justify-center p-6 md:p-8">
+    <motion.div
+      initial={{ y: 25, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.2, ease: "easeInOut" }}
+      className="text-black max-w-md text-center md:text-left"
+    >
+      <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 font-roboto">
+        50 Years of Excellence in<br />
+        Wholesale Distribution
+      </h1>
+      <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8">
+        Family-owned business serving quality cleaning supplies and household essentials since 1973
+      </p>
+    </motion.div>
+  </div>
 
-        {/* Right Side - Just the image */}
-        <div className="w-1/2 h-full"></div>
-      </section>
+  {/* Right Side - Full width on mobile, half on desktop */}
+  <div className="w-full md:w-1/2 h-1/2 md:h-full"></div>
+</section>
 
       {/* Journey Timeline Section */}
       <section className="w-full pt-10 bg-gray-50">
