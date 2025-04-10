@@ -2,83 +2,76 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const housekeepingProducts = [
-  // Cleaning Tools
-  { name: "Soap Dispenser", image: "https://images.unsplash.com/photo-1600166898405-da9535204843?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-  { name: "Soap Case", image: "https://images.pexels.com/photos/4239013/pexels-photo-4239013.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Cloth Drying Stand", image: "https://images.pexels.com/photos/5591581/pexels-photo-5591581.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Bathroom Set", image: "https://images.pexels.com/photos/3016430/pexels-photo-3016430.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Carpet Brush", image: "https://images.pexels.com/photos/4439458/pexels-photo-4439458.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Car Duster", image: "https://images.pexels.com/photos/7534602/pexels-photo-7534602.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Shoe Brush", image: "https://images.pexels.com/photos/5592324/pexels-photo-5592324.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Coat Brush", image: "https://images.unsplash.com/photo-1551909496-d9d4a69d4acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-  { name: "Lint Remover", image: "https://images.pexels.com/photos/5592346/pexels-photo-5592346.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Cloth Clips", image: "https://images.pexels.com/photos/8313422/pexels-photo-8313422.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  
-  // Brushes
-  { name: "Cloth Brush", image: "https://images.pexels.com/photos/5591585/pexels-photo-5591585.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Cloth Holder Hanger", image: "https://images.pexels.com/photos/4740584/pexels-photo-4740584.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Toilet Brush", image: "https://images.unsplash.com/photo-1565183997392-2f6f122e5912?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-  { name: "Hook Hanger for Clothes", image: "https://images.pexels.com/photos/5591630/pexels-photo-5591630.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Stick Hooks", image: "https://images.pexels.com/photos/6969809/pexels-photo-6969809.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  
-  // Containers & Holders
-  { name: "Plastic Baskets", image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-  { name: "Plastic Dusters", image: "https://images.pexels.com/photos/4019754/pexels-photo-4019754.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Hand Scruffing Brush", image: "https://images.pexels.com/photos/8176141/pexels-photo-8176141.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  
-  // Cleaning Equipment
-  { name: "Standing Tall Broom", image: "https://images.unsplash.com/photo-1603050215677-984e416ee8e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-  { name: "Room Freshener", image: "https://images.pexels.com/photos/4239036/pexels-photo-4239036.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Magic Brush (Roller/Rots)", image: "https://images.pexels.com/photos/4050360/pexels-photo-4050360.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Tile Brush", image: "https://images.pexels.com/photos/8192052/pexels-photo-8192052.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Loofa Cleaning Sponge", image: "https://images.pexels.com/photos/6806360/pexels-photo-6806360.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  
-  // More items continued...
-  { name: "Bottle Brush", image: "https://images.pexels.com/photos/5591658/pexels-photo-5591658.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Microfiber Duster", image: "https://images.pexels.com/photos/4239092/pexels-photo-4239092.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "All Housekeeping Essentials", image: "https://images.pexels.com/photos/4108715/pexels-photo-4108715.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Napkin", image: "https://images.unsplash.com/photo-1603123853880-a92fafb7809f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-  { name: "All Essential Toiletries", image: "https://images.pexels.com/photos/3737594/pexels-photo-3737594.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Face Towel", image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-  { name: "Kitchen Roll", image: "https://images.pexels.com/photos/4239026/pexels-photo-4239026.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Toilet Roll", image: "https://images.unsplash.com/photo-1584556812952-905ffd5b0a96?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-  { name: "Broom (Various Types)", image: "https://images.pexels.com/photos/4108833/pexels-photo-4108833.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Dry Mop (Dust Control)", image: "https://images.pexels.com/photos/4108750/pexels-photo-4108750.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Wet Mop (Various Types)", image: "https://images.unsplash.com/photo-1585932094919-f151cc40f34c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-  { name: "Aluminum Foil", image: "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-  { name: "Cling Foil", image: "https://images.pexels.com/photos/5591640/pexels-photo-5591640.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Butter Paper", image: "https://images.pexels.com/photos/9246067/pexels-photo-9246067.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Mosquito Repellent", image: "https://images.pexels.com/photos/10366522/pexels-photo-10366522.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Steel Wool & Cleaners", image: "https://images.pexels.com/photos/6032280/pexels-photo-6032280.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Detergents", image: "https://images.pexels.com/photos/4440543/pexels-photo-4440543.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Washroom Kit", image: "https://images.pexels.com/photos/2796105/pexels-photo-2796105.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Winger Trolley", image: "https://images.pexels.com/photos/4108719/pexels-photo-4108719.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Lobby Dust Pan", image: "https://images.pexels.com/photos/4618507/pexels-photo-4618507.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Caddy", image: "https://images.pexels.com/photos/5591654/pexels-photo-5591654.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Dust Bin", image: "https://images.unsplash.com/photo-1607006344380-b6775a0824a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-  { name: "Choke Plunger", image: "https://images.pexels.com/photos/6195651/pexels-photo-6195651.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Feather Brush", image: "https://images.pexels.com/photos/4108727/pexels-photo-4108727.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Fan Duster", image: "https://images.pexels.com/photos/4108713/pexels-photo-4108713.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Wall Duster", image: "https://images.pexels.com/photos/4108834/pexels-photo-4108834.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { name: "Glass Wiper", image: "https://images.pexels.com/photos/5591544/pexels-photo-5591544.jpeg?auto=compress&cs=tinysrgb&w=500" }
+  {
+    name: "soap dispenser",
+    image: "https://imgs.search.brave.com/yWHLKBhNTZ_Ro4IcVxNfCWp3WXstbeGZgLG8BnzUn4I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9rdWlz/aGkuY29tL2Nkbi9z/aG9wL2ZpbGVzL0Js/YWNrLVNvYXAtRGlz/cGVuc2VyLmpwZz92/PTE3Mzk4NzgwMDAm/d2lkdGg9NDgw"
+  },
+  {
+    name: "soap case",
+    image: "https://imgs.search.brave.com/z326U47vdpUtJ227lSO68PpAcw1RO8YDrFgOxUvWbhk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFFakZ6OUVZUUwu/anBn"
+  },
+  {
+    name: "cloth drying stand",
+    image: "https://imgs.search.brave.com/B3K_CshdtQwrEWs-bhf97sspvao6P0lvDEtte5rTE28/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWlsdG9uLmluL2Nk/bi9zaG9wL2ZpbGVz/LzUwLTMtbGF5ZXJz/LWNsb3RoLWRyeWlu/Zy1zdGFuZC1hcXVh/LWdyZWVuLXNwb3R6/ZXJvLWJ5LW1pbHRv/bi0zLW9yaWdpbmFs/LWltYWd1Mzlucmp0/aGpzeXAud2VicD92/PTE3MzY5MzQ5MTcm/d2lkdGg9MTA4MA"
+  },
+  {
+    name: "bathroom set",
+    image: "https://imgs.search.brave.com/znC8SRu2YAzYUPAjogP-nhT7LLVgWtYhCKWi3pAww24/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuemFyYWhvbWUu/bmV0L2Fzc2V0cy9w/dWJsaWMvYjhjMy85/ZmMwL2M4ZmM0NTQ1/YTU4NC80NThjNDli/OWNmNmQvNDI1Mjgw/MDAyNTBaSElJLWYv/NDI1MjgwMDAyNTBa/SElJLWYuanBnP3Rz/PTE3Mjc4NTcyMTAw/ODcmZj1hdXRv"
+  },
+  {
+    name: "carpet brush",
+    image: "https://m.media-amazon.com/images/I/61lB2KfEgSL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    name: "car duster",
+    image: "https://m.media-amazon.com/images/I/71HIk7MOefL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    name: "shoe duster",
+    image: "https://m.media-amazon.com/images/I/81nLQiDoGxL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    name: "coat brush",
+    image: "https://m.media-amazon.com/images/I/71ABBchWKJL._SX466_.jpg"
+  },
+  {
+    name: "lint remover",
+    image: "https://m.media-amazon.com/images/I/61hQgMl+8iL._AC_UL320_.jpg"
+  },
+  {
+    name: "cloth clips",
+    image: "https://m.media-amazon.com/images/I/71JRzwjjkQL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    name: "clip holder hangers",
+    image: "https://imgs.search.brave.com/wuQ5JwypWmPFuCbV9-oHWsV27SnIofV6Xa0f0HqDK0s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzM3Njg4NTY1L3Iv/aWwvZDJmNjYwLzQz/MTc5OTg5ODcvaWxf/MzQweDI3MC40MzE3/OTk4OTg3X2JnYjQu/anBn"
+  },
+  {
+    name: "stick hooks",
+    image: "https://m.media-amazon.com/images/I/51SbNCf5j6L.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    name: "plastic baskets",
+    image: "https://m.media-amazon.com/images/I/71Tfupws1ZL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    name: "plastic dusters",
+    image: "https://m.media-amazon.com/images/I/61j-Vrt5hpL._AC_UL320_.jpg"
+  },
+  {
+    name: "hand scrubbing brush",
+    image: "https://imgs.search.brave.com/eMuUfuYkmH7TI3zVm7nEuPRvSaWYNzoeEr2imRmeYt4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFrR3BMVHdFQ0wu/anBn"
+  },
+  {
+    name: "Standing Tall Broom",
+    image: "https://m.media-amazon.com/images/I/71fnxMFARcL._AC_SX679_.jpg"
+  },
+  {
+    name: "pocha",
+    image: "https://imgs.search.brave.com/egBJAnvxHP6mDorEr1Bo8K_HQXDP7KAuCV4PqYvcW4I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFXY1lseXpXdUwu/anBn"
+  }
 ];
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.05,
-      duration: 0.5
-    }
-  }),
-  hover: {
-    scale: 1.03,
-    boxShadow: "0 10px 25px rgba(0,0,0,0.1)",
-    transition: { duration: 0.2 }
-  }
-};
 
 const Homekeeping = () => {
   return (
@@ -108,7 +101,7 @@ const Homekeeping = () => {
             <motion.div
               key={index}
               custom={index}
-              variants={itemVariants}
+              // variants={itemVariants}
               whileHover="hover"
               className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"
             >
@@ -118,10 +111,17 @@ const Homekeeping = () => {
                   alt={product.name}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   loading="lazy"
+                  onError={(e) => {
+                    e.target.onerror = null; 
+                    e.target.src = "https://via.placeholder.com/500x300?text=Product+Image";
+                  }}
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">{product.name}</h3>
+                <div className="flex justify-between items-center mt-4">
+                  <span className="text-sm text-gray-500">In Stock</span>
+                </div>
               </div>
             </motion.div>
           ))}

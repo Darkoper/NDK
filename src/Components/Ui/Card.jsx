@@ -1,13 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css"; // Import effect styles
 
-const Card = ({ image, heading, para, btn, path, showArrow = true }) => {
+const Card = ({
+  image,
+  heading,
+  para,
+  btn,
+  path,
+  showArrow = true,
+  onImageClick, // New prop for image modal
+}) => {
   return (
     <div className="max-w-sm rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out bg-white">
-      {/* Lazy Loading Image */}
-      <LazyLoadImage className="w-full h-48 object-cover" src={image} alt={heading} />
+      {/* Lazy Loading Image with Click Handler */}
+      <LazyLoadImage
+        className="w-full h-48 object-cover cursor-pointer"
+        src={image}
+        alt={heading}
+        onClick={() => onImageClick && onImageClick(image)} // Trigger modal if handler is passed
+      />
 
       {/* Content Section */}
       <div className="px-6 py-4">
@@ -20,7 +32,6 @@ const Card = ({ image, heading, para, btn, path, showArrow = true }) => {
         <NavLink to={path}>
           <button className="flex items-center space-x-2 font-semibold py-2 px-4 rounded-lg transition-colors duration-300 ease-in-out group">
             <span>{btn}</span>
-            {/* Show arrow only if `showArrow` is true */}
             {showArrow && (
               <svg
                 className="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out"
@@ -29,7 +40,12 @@ const Card = ({ image, heading, para, btn, path, showArrow = true }) => {
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
               </svg>
             )}
           </button>

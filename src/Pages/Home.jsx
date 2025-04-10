@@ -14,16 +14,18 @@ const Home = () => {
       
     },
     {
-      image:"https://imgur.com/XagbAfO.png",
-      heading:"Hanger",
+      image:"https://i.ibb.co/KpQHZPXN/96.jpg",
+      heading:"Mop",
       btn: "View More",
+      path: "/products/Wholesalers-store"
     
     },
     {
-      image:"https://imgur.com/vWD9luE.png",
-      heading:"Hanger",
+      image:"https://i.ibb.co/1HFCHnZ/210.png",
+      heading:"Wiper",  
       para: "use for hanging cloths(Shirts, Tshirts, coats or pants )",
       btn: "View More",
+      path: "/products/Wholesalers-store"
     },
     
   ]

@@ -75,23 +75,18 @@ const About = () => {
           <div className="flex flex-wrap justify-center">
             <Feature  
               icon={<span className="text-4xl">🏢</span>}
-              heading="Founded in Sedar Bazaar"
-              para="Started our humble beginnings in a small shop in 1973"
+              heading="Founded in Sadar Bazaar"
+              para="Started our humble beginnings in a small shop in 1950"
             />
             <Feature
               icon={<span className="text-4xl">📦</span>}
               heading="Expanded Warehouse Operations"
-              para="Grew our storage capacity to serve more customers in 1985"
+              para="Grew our storage capacity to serve more customers in 1970"
             />
             <Feature
               icon={<span className="text-4xl">🚚</span>}
               heading="Pan-India Distribution Network"
-              para="Established nationwide distribution by 2001"
-            />
-            <Feature
-              icon={<span className="text-4xl">💻</span>}
-              heading="Digital Transformation"
-              para="Started showing products online 2025"
+              para="Established nationwide distribution by 1973"
             />
           </div>
         </div>

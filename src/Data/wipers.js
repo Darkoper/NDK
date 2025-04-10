@@ -90,12 +90,6 @@ const wiper = [
         showArrow: false
     },
     {
-        image: "https://i.ibb.co/gbZPmCYD/205.png",
-        heading: "Wiper 16",
-        para: "Strong, durable, and easy to use.",
-        showArrow: false
-    },
-    {
         image: "https://i.ibb.co/b5djXqCv/206.png",
         heading: "Wiper 17",
         para: "Perfect for wet and dry surfaces.",
