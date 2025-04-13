@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Card = ({
   image,
@@ -9,12 +8,12 @@ const Card = ({
   btn,
   path,
   showArrow = true,
-  onImageClick, // New prop for image modal
+  onImageClick, // Image click handler
 }) => {
   return (
     <div className="max-w-sm rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out bg-white">
-      {/* Lazy Loading Image with Click Handler */}
-      <LazyLoadImage
+      {/* Standard Image with Click Handler */}
+      <img
         className="w-full h-48 object-cover cursor-pointer"
         src={image}
         alt={heading}

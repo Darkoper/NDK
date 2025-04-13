@@ -1,17 +1,23 @@
 import React from 'react';
 import Category from '../../../Components/Ui/Category';
 
-const CleaningBrushes = () => {
-  const cleaningBrushes = [
+const FeatherBrush = () => {
+  const FeatherBrush = [
     {
       image: "https://i.ibb.co/V0fWmSXN/214.jpg",
-      heading: "Cleaning Brush 1",
+      heading: "Taiwan Duster",
       para: "Durable bristles for deep cleaning.",
       showArrow: false
     },
     {
       image: "https://i.ibb.co/JjQ74y4T/238.jpg",
-      heading: "Cleaning Brush 2",
+      heading: "Wooden Handle Taiwan Duster",
+      para: "Ergonomic handle for comfortable grip.",
+      showArrow: false
+    },
+    {
+      image: "https://i.ibb.co/V0fWmSXN/214.jpg",
+      heading: "Sheru PP Duster",
       para: "Ergonomic handle for comfortable grip.",
       showArrow: false
     }
@@ -19,9 +25,9 @@ const CleaningBrushes = () => {
 
   return (
     <div>
-      <Category title={"Cleaning Brushes"} data={cleaningBrushes} />
+      <Category title={"Feather brushes"} data={FeatherBrush} />
     </div>
   );
 };
 
-export default CleaningBrushes;
+export default FeatherBrush;

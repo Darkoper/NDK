@@ -3,12 +3,12 @@ import Card from "../../Components/Ui/Card";
 
 const WholesalersStore = () => {
   const cards = [
-    {
-      image: "https://imgur.com/pZTtbq4.png",
-      heading: "Hanger",
-      btn: "View More",
-      path: "/products/Wholesalers-store/Hangers"
-    },
+    // {
+    //   image: "https://imgur.com/pZTtbq4.png",
+    //   heading: "Hanger",
+    //   btn: "View More",
+    //   path: "/products/Wholesalers-store/Hangers"
+    // },
     {
       image: "https://i.ibb.co/tPLfkYjt/21.jpg",
       heading: "Wipers",
@@ -22,7 +22,7 @@ const WholesalersStore = () => {
       path: "/products/Wholesalers-store/SprayBottles"
     },
     {
-      image: "https://i.ibb.co/Xr3hp8RQ/160.jpg",
+      image: "https://res.cloudinary.com/diwna43hl/image/upload/v1744535624/155_hm7uqo.jpg",
       heading: "Toilet Brushes",
       btn: "View More",
       path: "/products/Wholesalers-store/ToiletBrushes"
@@ -41,9 +41,15 @@ const WholesalersStore = () => {
     },
     {
       image: "https://i.ibb.co/V0fWmSXN/214.jpg",
-      heading: "Cleaning Brushes",
+      heading: "Feather Brushes",
       btn: "View More",
       path: "/products/Wholesalers-store/CleaningBrushes"
+    },
+    {
+      image: "https://res.cloudinary.com/diwna43hl/image/upload/v1744537167/Premier_1kg_Foil_qti8ue.jpg",
+      heading: "Aluminium Foil",
+      btn: "View More",
+      path: "/products/Wholesalers-store/AluminiumFoil"
     }
   ];
 

@@ -1,59 +1,58 @@
 const sprayBottles = [
-    {
-      image: "https://i.ibb.co/zTw8RsD3/122.jpg",
-      heading: "Spray Bottle 1",
-      para: "Compact spray bottle for daily use.",
-      showArrow: false
-    },
-    {
-      image: "https://i.ibb.co/Hfys5s7P/222.jpg",
-      heading: "Spray Bottle 2",
-      para: "Transparent bottle with fine mist nozzle.",
-      showArrow: false
-    },
-    {
-      image: "https://i.ibb.co/Z6FL15wG/231.jpg",
-      heading: "Spray Bottle 3",
-      para: "Durable plastic bottle for multipurpose use.",
-      showArrow: false
-    },
-    {
-      image: "https://i.ibb.co/KxPYTqpt/232.jpg",
-      heading: "Spray Bottle 4",
-      para: "Adjustable nozzle for different spray patterns.",
-      showArrow: false
-    },
-    {
-      image: "https://i.ibb.co/MkP0kjw9/245.jpg",
-      heading: "Spray Bottle 5",
-      para: "Ergonomic grip for easy handling.",
-      showArrow: false
-    },
-    {
-      image: "https://i.ibb.co/v44WMtqN/246.jpg",
-      heading: "Spray Bottle 6",
-      para: "Stylish design with a strong spray.",
-      showArrow: false
-    },
-    {
-      image: "https://i.ibb.co/Cfr91fd/247.jpg",
-      heading: "Spray Bottle 7",
-      para: "Leak-proof bottle for long-lasting use.",
-      showArrow: false
-    },
-    {
-      image: "https://i.ibb.co/8g70wMt0/248.jpg",
-      heading: "Spray Bottle 8",
-      para: "Refillable bottle for cleaning solutions.",
-      showArrow: false
-    },
-    {
-      image: "https://i.ibb.co/kVVfgNNS/252.jpg",
-      heading: "Spray Bottle 9",
-      para: "Compact and portable for travel needs.",
-      showArrow: false
-    }
-  ];
-  
-  export { sprayBottles };
-  
+  {
+    image: "https://i.ibb.co/zTw8RsD3/122.jpg",
+    heading: "Champion 1 Ltr Pressure Bottle",
+    para: "High-capacity pressure bottle for heavy-duty use.",
+    showArrow: false
+  },
+  {
+    image: "https://i.ibb.co/Hfys5s7P/222.jpg",
+    heading: "Transparent 1.5 Ltr Pressure Bottle",
+    para: "Transparent pressure bottle with large capacity.",
+    showArrow: false
+  },
+  {
+    image: "https://i.ibb.co/Z6FL15wG/231.jpg",
+    heading: "Black 400ml Spray Bottle",
+    para: "Sleek black bottle ideal for salons or home use.",
+    showArrow: false
+  },
+  {
+    image: "https://i.ibb.co/KxPYTqpt/232.jpg",
+    heading: "Unique White Spray Bottle",
+    para: "Stylish white spray bottle with modern design.",
+    showArrow: false
+  },
+  {
+    image: "https://i.ibb.co/MkP0kjw9/245.jpg",
+    heading: "Transparent 500ml Spray Bottle",
+    para: "Clear bottle for easy monitoring of contents.",
+    showArrow: false
+  },
+  {
+    image: "https://i.ibb.co/v44WMtqN/246.jpg",
+    heading: "Scissor Spray Bottle 400ml",
+    para: "Functional and ergonomic spray bottle.",
+    showArrow: false
+  },
+  {
+    image: "https://i.ibb.co/Cfr91fd/247.jpg",
+    heading: "Unique Blue Spray Bottle",
+    para: "Attractive blue bottle with fine mist sprayer.",
+    showArrow: false
+  },
+  {
+    image: "https://i.ibb.co/8g70wMt0/248.jpg",
+    heading: "Sanitation Bottle 100ml",
+    para: "Pocket-sized bottle for sanitizer or perfume.",
+    showArrow: false
+  },
+  {
+    image: "https://i.ibb.co/kVVfgNNS/252.jpg",
+    heading: "Pushp 1 Ltr Pressure Bottle",
+    para: "Heavy-duty pressure bottle for multipurpose spraying.",
+    showArrow: false
+  }
+];
+
+export { sprayBottles };
