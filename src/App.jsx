@@ -7,7 +7,7 @@ import HomeKeeping from "./Pages/Homekeeping";
 import WholesalersStore from "./Pages/WholesalersStore/WholesalersStore.jsx";
 import Footer from "./Components/Footer.jsx";
 import Hangers from "./Pages/WholesalersStore/products/Hangers.jsx";
-import Wipers from "./Pages/WholesalersStore/products/wipers.jsx"
+import Wipers from "./Pages/WholesalersStore/products/Wipers.jsx"
 import SprayBottles from "./Pages/WholesalersStore/products/SprayBottles.jsx";
 import Mops from "./Pages/WholesalersStore/products/Mop.jsx"
 import ToiletBrushes from "./Pages/WholesalersStore/products/ToiletBrush.jsx";
