@@ -27,7 +27,7 @@ import Dustpan from "./Pages/WholesalersStore/products/Dustpan.jsx";
 import FaceTissue from "./Pages/WholesalersStore/products/FaceTissue.jsx";
 import Footscrubber from "./Pages/WholesalersStore/products/Footscrubber.jsx";
 import Hooks from "./Pages/WholesalersStore/products/Hooks.jsx";
-import JalaBrush from "./Pages/WholesalersStore/products/jalaBrush.jsx";
+import JalaBrush from "./Pages/WholesalersStore/products/JalaBrush.jsx";
 import KitchenRolls from "./Pages/WholesalersStore/products/KitchenRolls.jsx";
 import Lofa from "./Pages/WholesalersStore/products/Lofa.jsx";
 import MagicBrush from "./Pages/WholesalersStore/products/MagicBrush.jsx";
