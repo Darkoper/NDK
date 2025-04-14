@@ -193,6 +193,22 @@ const WholesalersStore = () => {
       btn: "View More",
       path: "/products/Wholesalers-store/TileBrushes"
     },
+    {
+      image: "https://res.cloudinary.com/diwna43hl/image/upload/v1744637608/49_mivjkl.jpg",
+      heading: "Toilet Rolls", 
+      btn: "View More",
+      path: "/products/Wholesalers-store/ToiletRolls"
+    },
+    {
+      image: "https://res.cloudinary.com/diwna43hl/image/upload/v1744637912/31_jv8ewf.jpg",
+      heading: "Urinal Screen", 
+      showArrow: false
+    },
+    {
+      image: "https://res.cloudinary.com/diwna43hl/image/upload/v1744638293/51_ycwcdp.jpg",
+      heading: "Wonder Clean", 
+      showArrow: false
+    },
     
 
   ];

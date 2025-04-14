@@ -5,7 +5,7 @@ import { bucketMops } from '../../../Data/bucketMops'
 const BucketMops = () => {
   return (
     <div>
-      <Category title={"Broom Sticks"} data={bucketMops} />
+      <Category title={"Bucket Mops"} data={bucketMops} />
     </div>
   )
 }

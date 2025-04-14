@@ -35,6 +35,7 @@ import Napkins from "./Pages/WholesalersStore/products/Napkins.jsx";
 import Scrubber from "./Pages/WholesalersStore/products/Scrubber.jsx";
 import SinkBrush from "./Pages/WholesalersStore/products/SinkBrush.jsx";
 import TileBrushes from "./Pages/WholesalersStore/products/TileBrushes.jsx";
+import ToiletRolls from "./Pages/WholesalersStore/products/ToiletRolls.jsx";
 export default function App() {
   return (
     <Router>
@@ -74,6 +75,7 @@ export default function App() {
         <Route path = "/products/Wholesalers-store/Scrubber" element={<Scrubber/>}/>
         <Route path = "/products/Wholesalers-store/SinkBrushes" element={<SinkBrush/>}/>
         <Route path = "/products/Wholesalers-store/TileBrushes" element={<TileBrushes/>}/>
+        <Route path = "/products/Wholesalers-store/ToiletRolls" element={<ToiletRolls/>}/>
         
       </Routes>
       <Footer />

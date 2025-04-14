@@ -6,6 +6,7 @@ const Category = ({ title, data }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [loading, setLoading] = useState(true);
   const [loadedImages, setLoadedImages] = useState([]);
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
@@ -22,7 +23,6 @@ const Category = ({ title, data }) => {
         img.src = card.image;
       });
     });
-    
 
     Promise.all(imagePromises).then(() => {
       setLoading(false);
@@ -36,26 +36,31 @@ const Category = ({ title, data }) => {
   if (loading) {
     return (
       <div className="container mx-auto px-6 py-12">
-        <h1 className="text-center text-4xl font-extrabold text-gray-300 mb-10 animate-pulse">
+        <h1 className="text-center text-3xl md:text-4xl font-extrabold text-gray-700 mb-10">
           {title}
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
           {[...Array(8)].map((_, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md p-4 animate-pulse"
+              className="bg-white rounded-lg shadow-md overflow-hidden"
             >
-              <div className="bg-gray-300 h-48 w-full rounded mb-4"></div>
-              <div className="h-4 bg-gray-300 rounded w-3/4 mb-2"></div>
-              <div className="h-4 bg-gray-200 rounded w-5/6 mb-4"></div>
-              <div className="h-10 bg-gray-300 rounded w-1/2 mx-auto"></div>
+              <div className="animate-pulse">
+                <div className="bg-gray-200 h-48 w-full rounded-t-lg"></div>
+                <div className="p-4">
+                  <div className="h-5 bg-gray-200 rounded w-3/4 mb-2"></div>
+                  <div className="h-3 bg-gray-200 rounded w-5/6 mb-4"></div>
+                  <div className="flex justify-center">
+                    <div className="h-10 bg-gray-200 rounded w-1/2"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
       </div>
     );
   }
-  
 
   return (
     <motion.div
@@ -66,7 +71,7 @@ const Category = ({ title, data }) => {
     >
       {/* Title Section */}
       <motion.h1
-        className="text-center text-4xl font-extrabold text-gray-900 mb-10"
+        className="text-center text-3xl md:text-4xl font-extrabold text-gray-900 mb-10"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
@@ -76,7 +81,7 @@ const Category = ({ title, data }) => {
 
       {/* Cards Grid Section */}
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, staggerChildren: 0.1 }}
