@@ -58,7 +58,7 @@ const Home = () => {
   return (
     <div className='h-full w-full'>
       <Helmet>
-        <title>Narain Das Khanna - Quality Household Products</title>
+        <title>Narain Das Khanna & co - Quality Household Products</title>
         <meta name="description" content="Discover a wide range of quality household products at Narain Das Khanna. Explore our collections for home keeping essentials and wholesale hygiene solutions." />
         {/* You can add more SEO-related meta tags here */}
       </Helmet>
