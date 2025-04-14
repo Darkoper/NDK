@@ -16,6 +16,7 @@
     "motion": "^12.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-helmet-async": "^2.0.5",
     "react-lazy-load-image-component": "^1.6.3",
     "react-router-dom": "^7.1.5",
     "remixicon": "^4.6.0"
