@@ -6,6 +6,9 @@ const Category = ({ title, data }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [loading, setLoading] = useState(true);
   const [loadedImages, setLoadedImages] = useState([]);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   useEffect(() => {
     const imagePromises = data.map((card) => {
@@ -19,6 +22,7 @@ const Category = ({ title, data }) => {
         img.src = card.image;
       });
     });
+    
 
     Promise.all(imagePromises).then(() => {
       setLoading(false);
@@ -31,12 +35,27 @@ const Category = ({ title, data }) => {
 
   if (loading) {
     return (
-      <div className="container mx-auto px-6 py-12 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-indigo-500"></div>
-        <span className="ml-3 text-gray-700">Loading Images...</span>
+      <div className="container mx-auto px-6 py-12">
+        <h1 className="text-center text-4xl font-extrabold text-gray-300 mb-10 animate-pulse">
+          {title}
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {[...Array(8)].map((_, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-md p-4 animate-pulse"
+            >
+              <div className="bg-gray-300 h-48 w-full rounded mb-4"></div>
+              <div className="h-4 bg-gray-300 rounded w-3/4 mb-2"></div>
+              <div className="h-4 bg-gray-200 rounded w-5/6 mb-4"></div>
+              <div className="h-10 bg-gray-300 rounded w-1/2 mx-auto"></div>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
+  
 
   return (
     <motion.div
