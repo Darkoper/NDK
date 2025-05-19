@@ -4,27 +4,28 @@ import { NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 import Feature from '../Components/Ui/Feature';
 import CatSec from '../Components/Ui/Catsec';
+import Marquee from '../Components/Ui/Marquee';
  // Make sure the path is correct
 
 const About = () => {
   const cards= [
     {
       image:"https://plus.unsplash.com/premium_photo-1661320859992-f6213b525d2f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      heading:"Home-Keeping Essentials",
+      heading:"House-Keeping Essentials",
       btn: "View More",
-      
+      path: "/products/home-keeping",
     },
     {
       image:"https://images.unsplash.com/photo-1601598704991-eef6114775e0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       heading:"Wholesale Products",
       btn: "View More",
-    
+      path: "/products/Wholesalers-store",
     },
     {
       image:"https://images.unsplash.com/photo-1601598852806-524f0060508e?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      heading:"Wholesale Products",
+      heading:"House-Keeping Essentials",
       btn: "View More",
-    
+      path: "/products/home-keeping",
     }
   ]
   return (
@@ -136,6 +137,21 @@ const About = () => {
     </motion.div>
   </div>
 </section>
+{/* Marquee Section */}
+<section className="w-full bg-gray-50 overflow-hidden ">
+  <div className="container px-4">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="text-center mb-12"
+    >
+      <h2 className="text md:text-4xl font-bold text-gray-800 mt-8">Our Partners</h2>
+      <div className="w-60 h-1 bg-green-600 mx-auto"></div>
+    </motion.div>
+    <Marquee />
+  </div>
+</section>
 {/* Why Choose Us Section */}
 <section className="w-full py-16 bg-gray-50">
   <div className="container mx-auto px-4">
@@ -168,6 +184,9 @@ const About = () => {
     </div>
   </div>
 </section>
+
+
+
     </div>
   )
 }

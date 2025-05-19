@@ -25,7 +25,6 @@ const Home = () => {
     {
       image:"https://i.ibb.co/1HFCHnZ/210.png",
       heading:"Wiper",
-      para: "use for hanging cloths(Shirts, Tshirts, coats or pants )",
       btn: "View More",
       path: "/products/Wholesalers-store"
     },
@@ -35,22 +34,22 @@ const Home = () => {
   const cards1 = [
     {
       image: "https://media.istockphoto.com/id/510693044/photo/house-cleaning-product-on-wood-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=Dgz3K3T6OSNxS2ciy7Voo8ASkkHyEzWYKQy1qUfu14w=",
-      heading: "Home Keeping Essentials",
-      para: "Housekeeping essentials include cleaning sprays, sponges, brushes, and detergents for a spotless and fresh home.",
-      btn: "Explore More",
-      path: "/products/home-keeping"
-    },
-    {
-      image: "https://plus.unsplash.com/premium_photo-1661423635728-ebb72749503c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmF0aHJvb20lMjBlc3NlbnRpYWxzfGVufDB8fDB8fHww",
       heading: "Wholesaler's Store",
       para: "Bulk hygiene solutions for businesses, ensuring cleanliness and convenience at wholesale prices",
       btn: "Explore More",
       path: "/products/Wholesalers-store"
     },
     {
-      image: "https://images.unsplash.com/photo-1640294418596-1534299b1291?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNla2VlcGluZ3xlbnwwfHwwfHx8MA%3D%3D",
+      image: "https://plus.unsplash.com/premium_photo-1661423635728-ebb72749503c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmF0aHJvb20lMjBlc3NlbnRpYWxzfGVufDB8fDB8fHww",
       heading: "Home Keeping Essentials",
       para: "Housekeeping essentials include cleaning sprays, sponges, brushes, and detergents for a spotless and fresh home.",
+      btn: "Explore More",
+      path: "/products/home-keeping"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1640294418596-1534299b1291?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNla2VlcGluZ3xlbnwwfHwwfHx8MA%3D%3D",
+      heading: "Wholesaler's Store",
+      para: "Bulk hygiene solutions for businesses, ensuring cleanliness and convenience at wholesale prices",
       btn: "Explore More",
       path: "/products/home-keeping"
     }

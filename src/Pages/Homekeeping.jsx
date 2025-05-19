@@ -69,7 +69,91 @@ const housekeepingProducts = [
   {
     name: "pocha",
     image: "https://imgs.search.brave.com/egBJAnvxHP6mDorEr1Bo8K_HQXDP7KAuCV4PqYvcW4I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFXY1lseXpXdUwu/anBn"
-  }
+  },
+  {
+    name: "Kitchen Rolls",
+    image: "https://imgs.search.brave.com/5BpA0WWW_bH8-jateVdIXd75FhVrh99IN4h9R3dveo4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFOSm1tVUhHM0wu/anBn"
+  },
+  {
+    name: "Toilet Roll",
+    image: "https://imgs.search.brave.com/ggNqg1Uh39y9jaZVe_bhJYIPz8diVk6vM5zmgNXlUVo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDU1/MjM3OTIxL3Bob3Rv/L3RvaWxldC1wYXBl/ci5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9RlRmYV83MFRV/Vl9Hci1FeWdpZ2dn/bTBSVkdVbm9QODZt/cHhtY3pxZUtqZz0"
+  },
+  {
+    name: "Broom (Bhuari, Seekh, Plastic, etc.)",
+    image: "https://imgs.search.brave.com/UGHDxpypTNQke12g-B9DXBmGwdgU4pUmFomVFEHx6gE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9k/dXN0LXBhbi1icm9v/bV8xMzM5LTU4OTYu/anBnP3NlbXQ9YWlz/X2h5YnJpZCZ3PTc0/MA"
+  },
+  {
+    name: "Wet Mops",
+    image: "https://imgs.search.brave.com/cF6wvWgwcjdcUuGYG8USzMwamZ3cX-ldEDHav0angTg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFGdE95ZFV2K0wu/anBn"
+  },
+  {
+    name: "Dry Mops",
+    image: "https://imgs.search.brave.com/DPUNNevQO6ItRHynO1WWYs-CDfndJqbAdMTSxMk_hD0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGhkc3RhdGlj/LmNvbS9wcm9kdWN0/SW1hZ2VzL2EyNTE4/ZDUzLTk4N2YtNDdj/Zi04MzQ1LWMxZTkz/MmU3ODQ5Yy9zdm4v/cnViYmVybWFpZC1j/b21tZXJjaWFsLXBy/b2R1Y3RzLWR1c3Qt/bW9wcy0xODg3MDgy/LTY0XzYwMC5qcGc"
+  },
+  {
+    name: "Aluminium Foil",
+    image: "https://imgs.search.brave.com/G4bipTGVdcn29z9-J4QecrvXjuw4ixWyzX0mnfYZON0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFRU1krR2NoT0wu/anBn"
+  },
+  {
+    name: "Cling Foil",
+    image: "https://imgs.search.brave.com/855BrPUME45FSDvIkeXq3DQYtTpE2hgQSvYY-2_-qa0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzYxRHFCUjBMUDJM/LmpwZw"
+  },
+  {
+    name: "Butter Paper",
+    image: "https://imgs.search.brave.com/v09pZfVo_azD47JJqu_j05P3RrcHTdFvSMd6VnGAvcA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YmFrZXNoYWtlLmNv/LmluL2ltYWdlL2Nh/Y2hlL2NhdGFsb2cv/cHJvZHVjdHMvQnV0/dGVyJTIwUGFwZXIt/NTUweDU1MC5qcGc"
+  },
+  {
+    name: "Hit, Mosquito Coil, Allout, Goodnight, etc. (Mosquito Repellent)",
+    image: "https://imgs.search.brave.com/YR3EBq8WpBHQ8MdLGsWqZcqmpIyCScdkELUNmareifE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/MzFSQnYtalBhaEwu/anBn"
+  },
+  {
+    name: "Steel Wool, Scotch Brite, Wonder Wipes, Kitchen Cleaners, etc.",
+    image: "https://imgs.search.brave.com/gsd56jnJhVMA3xKQR9RsLWJ7R6c-RcUoQuZgnJ5CtKY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzcxNXAzVGdMSy1M/LmpwZw"
+  },
+  {
+    name: "Surf (Vim, Fena, Surf Excel, etc.)",
+    image: "https://imgs.search.brave.com/Ef85R9yNFzJeWSDhfKoludYh10fNLq7LVbUM6jlkRoE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFJeEdOQzN4UEwu/anBn"
+  },
+  {
+    name: "Gloves, Shower Cap, Toothbrush, etc. (Entire Washroom Kit)",
+    image: "https://imgs.search.brave.com/9jtl8yOMqZkaJSOLs0MILDK1beisNmkye12ZHZzE2QY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzEx/NjEvOTYzNi9maWxl/cy9wZXJzb24td2lw/aW5nLXRoZS13YWxs/c18xMDI0eDEwMjQu/anBnP3Y9MTYyODgx/OTg5Mw"
+  },
+  {
+    name: "Wringer Trolley",
+    image: "https://imgs.search.brave.com/rX9WZmTkFV0UOmkr4NI-N2bR3qJSdUmIVzEvmdMApYU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFhYVlOa0FiREwu/anBn"
+  },
+  {
+    name: "Lobby Dust Pan",
+    image: "https://imgs.search.brave.com/95D6h7fqk81zQ7-JvZuTEkWWYx2spzZo8mnbOtPcPww/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzUxNTNnRmRUOHBM/LmpwZw"
+  },
+  {
+    name: "Dust Pan",
+    image: "https://imgs.search.brave.com/1NMwJLV4z7orgqy5mhKcT0Xy5PKX_D4azqHtuKC-Piw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTI2/Mzc5Nzg2L3Bob3Rv/L2R1c3RwYW4uanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPU5o/cWRVVXQ2d1ZtMkdB/M0MyNHJ5OTl1eTVv/S1BTbF9DVEZEWmZi/QWhxRkk9"
+  },
+  {
+    name: "Choke Plunger",
+    image: "https://imgs.search.brave.com/aZpkT2H4qy91qH5ZVmZFtUUd6TzH1nevT4Sqz_nfYXU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9vc2J1/cm5zLmNvbS9jZG4v/c2hvcC9maWxlcy9h/OWM4LTYzMWEzMzM4/NmY0ZTEuanBnP3Y9/MTcyODYyMjMzNiZ3/aWR0aD0xNDQ1"
+  },
+  {
+    name: "Fan Dsuter",
+    image: "https://m.media-amazon.com/images/I/41yVSOAs1mL._SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    name: "Wall Duster",
+    image: "https://imgs.search.brave.com/hKbHwI4TOUhKXETthK4Eu8Xzh6RZWLX5h5xtbWNw96g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODFDOCswV3hVUUwu/anBn"
+  },
+  {
+    name: "Glass Wiper",
+    image: "https://imgs.search.brave.com/fVkrfFF7t2mZb1DV7cotIN6qes0FQGci-n4Ba54uzIY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFpbHVRbFJSUUwu/anBn"
+  },
+  {
+    name: "Plastic Baskets",
+    image: "https://imgs.search.brave.com/RRB0vMzCGbY1z_BddqSmhR4C1Fz0_PzJohbgOO9mVv8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFmSlp0UGx4dUwu/anBn"
+  },
+  {
+    name: "Plastic Dustbins (all sizes)",
+    image: "https://imgs.search.brave.com/yMfKuRd1nkSAO9QTH1raFZUdFvW2nXcZBZQ4YJqRTtc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aWlt/Zy50aXN0YXRpYy5j/b20vZnAvMC8wMjkv/cGxhc3RpYy1kdXN0/Ymlucy0zMTguanBn"
+  },
 ];
 
 
